@@ -1,6 +1,7 @@
 document
   .getElementById("discover-something")
-  .addEventListener("click", function () {
+  .addEventListener("click", function (event) {
+    event.preventDefault();
     window.location.href = "./main.html";
   });
 
