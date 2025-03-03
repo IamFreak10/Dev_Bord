@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Bord</title>
+    <!-- Adding Tailwind And Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+    <!-- Addding Font poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .poppins-light {
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+    </style>
+</head>
+<header class="poppins-light max-w-[90%] mx-auto">
+    <nav>
+        <div class="navbar bg-base-100 shadow-sm flex justify-between rounded-sm">
+            <div class="flex items-center ">
+                <div> <img src="./assets/logo.png" alt=""> </div>
+                <div>
+                    <h1 class="text-4xl">Dev <span class="font-bold">Bord</span></h1>
+                </div>
+
+            </div>
+            <div class="flex items-center gap-11">
+                <div class="flex flex-row gap-2 "><img src="./assets/checkbox.png" alt="">
+                    <h3 id="task-plus" class="text-2xl font-bold">23</h3>
+                </div>
+
+                <div>
+                    <img id="theme-btn" src="./assets/theme-btn.png" alt="">
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body class="poppins-light bg-[#F4F7FF] max-w-[100%] min-h-screen mx-auto">
+
+    <section class="max-w-[90%] mx-auto my-10 bg-base-100 flex gap-x-6">
+        <!-- Left Large Part -->
+        <div class="w-[75%] p-5 ">
+            <!-- Upper Part -->
+            <div class="flex justify-around   w-auto gap-5 mb-16 ">
+                <div class="flex items-center  bg-[#F4F7FF]  px-5 py-2 gap-8 rounded-lg">
+                    <div class="bg-white p-5 rounded-full"> <img src="assets/checkbox.png" alt=""></div>
+                    <div>
+                        <h4 class="text-xl">Task Assigned </h4>
+                        <h2 id="task-assigned-minius" class="font-bold text-3xl">06</h2>
+                    </div>
+                </div>
+                <div id="discover-something"
+                    class="w-[60%] flex items-center justify-center bg-linear-to-r from-cyan-500 to-blue-500 px-5 py-2 rounded-lg">
+                    <img src="./assets/board.png" alt="">
+                    <p class="text-2xl text-white">Discover Something New Today!</p>
+                </div>
+                <div class="flex items-center  bg-[#F4F7FF]  px-5 py-2 gap-8 rounded-lg">
+                    <div class="bg-white p-5 rounded-full"> <img src="assets/calender.png" alt=""></div>
+                    <div class="text-2xl font-semibold" id="date-container">
+
+                    </div>
+                </div>
+            </div>
+            <!-- Card Container -->
+            <div class="grid grid-cols-3 gap-x-8 gap-y-10">
+                <div class=" bg-[#F4F7FF] rounded-xl p-3  ">
+                    <div class="mb-5">
+                        <button class="bg-white px-4 py-1 rounded-xl mb-3 ">ShopEase</button>
+                        <h1 class="text-2xl mb-2 ">Fix Mobile Button Issue </h1>
+                        <p class="bg-white p-5 text-sm text-gray-400">Debug using Chrome DevTools, check for overlapping
+                            elements, and ensure onClick works properly
+                            and ensure onClick works properly</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h3>Deadline</h3>
+                            <h2 class="font-bold">21 March 2025</h2>
+
+                        </div>
+                        <button id="fix-mobile-btn" class="btn text-white  bg-blue-500 rounded-md">Completed</button>
+                    </div>
+                </div>
+                <div class=" bg-[#F4F7FF] rounded-xl p-3 ">
+                    <div class="mb-5">
+                        <button class="bg-white px-4 py-1 rounded-xl mb-3 ">CloudSync</button>
+                        <h1 class="text-2xl mb-2 ">Add Dark Mode </h1>
+                        <p class="bg-white p-5 text-sm text-gray-400">Store the user's preference in localStorage,
+                            update CSS variables dynamically, and apply a smooth transition effect.</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h3>Deadline</h3>
+                            <h2 class="font-bold">21 March 2025</h2>
+
+                        </div>
+                        <button id="add-dark-mode" class="btn text-white  bg-blue-500 rounded-md">Completed</button>
+                    </div>
+                </div>
+                <div class=" bg-[#F4F7FF] rounded-xl p-3 ">
+                    <div class="mb-5">
+                        <button class="bg-white px-4 py-1 rounded-xl mb-3 ">SwiftPay</button>
+                        <h1 class="text-2xl mb-2 ">Optimize Home page  </h1>
+                        <p class="bg-white p-5 text-sm text-gray-400">Debug using Chrome DevTools, check for overlapping
+                            elements, and ensure onClick works properly
+                            and ensure onClick works properly</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h3>Deadline</h3>
+                            <h2 class="font-bold">21 March 2025</h2>
+
+                        </div>
+                        <button id="optimize-home-btn" class="btn text-white  bg-blue-500 rounded-md">Completed</button>
+                    </div>
+                </div>
+                <div class="  bg-[#F4F7FF] rounded-xl p-3 ">
+                    <div class="mb-5">
+                        <button class="bg-white px-4 py-1 rounded-xl mb-3 ">Meta</button>
+                        <h1 class="text-2xl mb-2 ">Add new emoji 🤲 </h1>
+                        <p class="bg-white p-5 text-sm text-gray-400">Debug using Chrome DevTools, check for overlapping
+                            elements, and ensure onClick works properly
+                            and ensure onClick works properly</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h3>Deadline</h3>
+                            <h2 class="font-bold">21 March 2025</h2>
+
+                        </div>
+                        <button id="Add-new-emoji" class="btn text-white  bg-blue-500 rounded-md">Completed</button>
+                    </div>
+                </div>
+                <div class=" bg-[#F4F7FF] rounded-xl p-3 ">
+                    <div class="mb-5">
+                        <button class="bg-white px-4 py-1 rounded-xl mb-3 ">Google LLC</button>
+                        <h1 class="text-2xl mb-2 ">Integrate OpenAI API </h1>
+                        <p class="bg-white p-5 text-sm text-gray-400">Debug using Chrome DevTools, check for overlapping
+                            elements, and ensure onClick works properly
+                            and ensure onClick works properly</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h3>Deadline</h3>
+                            <h2 class="font-bold">21 March 2025</h2>
+
+                        </div>
+                        <button id="Integrate-OpenAI-API"
+                            class="btn text-white  bg-blue-500 rounded-md">Completed</button>
+                    </div>
+                </div>
+                <div class=" bg-[#F4F7FF] rounded-xl p-3 ">
+                    <div class="mb-5">
+                        <button class="bg-white px-4 py-1 rounded-xl mb-3 ">Glassdoar</button>
+                        <h1 class="text-2xl mb-2 ">Improve Job searching </h1>
+                        <p class="bg-white p-5 text-sm text-gray-400">Debug using Chrome DevTools, check for overlapping
+                            elements, and ensure onClick works properly
+                            and ensure onClick works properly</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h3>Deadline</h3>
+                            <h2 class="font-bold">21 March 2025</h2>
+
+                        </div>
+                        <button id="Improve-Job-searching"
+                            class="btn text-white  bg-blue-500 rounded-md">Completed</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Activity Part -->
+
+
+        <div class="w-[23%]">
+            <div class="flex flex-col items-center  p-5 ">
+                <div class="flex items-center mb-5">
+                    <img src="assets/activity.png" alt="">
+                    <h2 class="text-xl font-semibold">Activity Log</h2>
+                </div>
+                <div> <button id="Clear-history" class="btn text-white  bg-blue-500 rounded-md">Clear History</button>
+                </div>
+
+            </div>
+            <hr>
+            <div id="activity-history" class="flex flex-col items-center  p-5 ">
+
+
+            </div>
+
+        </div>
+
+    </section>
+</body>
+<script src="./functions/function.js"></script>
+<script src="./interactive/theme.js"></script>
+<script src="./interactive/date.js"></script>
+<script src="./interactive/dom.js"></script>
+
+</html>
