@@ -4,17 +4,19 @@ document
     window.location.href = "./main.html";
   });
 
-
 document
   .getElementById("fix-mobile-btn")
   .addEventListener("click", function () {
-    alert("OK!");
+    alert("Board Updatedd Successfully");
 
     let taskMinus = getInnerTextByID("task-assigned-minius") - 1;
     setInnerTextByIDandValue("task-assigned-minius", taskMinus);
     let taskPlus = getInnerTextByID("task-plus") + 1;
     setInnerTextByIDandValue("task-plus", taskPlus);
 
+    if (taskMinus === 0) {
+      alert("Congress !!!You Have compleated All The Task");
+    }
     let formattedTime = getCurrentTime();
 
     let add = document.getElementById("activity-history");
@@ -32,12 +34,16 @@ document
     this.disabled = true;
   });
 document.getElementById("add-dark-mode").addEventListener("click", function () {
-  alert("OK!");
+  alert("Board Updatedd Successfully!!");
 
   let taskMinus = getInnerTextByID("task-assigned-minius") - 1;
   setInnerTextByIDandValue("task-assigned-minius", taskMinus);
   let taskPlus = getInnerTextByID("task-plus") + 1;
   setInnerTextByIDandValue("task-plus", taskPlus);
+
+  if (taskMinus === 0) {
+    alert("Congress !!!You Have compleated All The Task");
+  }
 
   let formattedTime = getCurrentTime();
 
@@ -52,13 +58,16 @@ document.getElementById("add-dark-mode").addEventListener("click", function () {
 document
   .getElementById("optimize-home-btn")
   .addEventListener("click", function () {
-    alert("OK!");
+    alert("Board Updatedd Successfully!!");
 
     let taskMinus = getInnerTextByID("task-assigned-minius") - 1;
     setInnerTextByIDandValue("task-assigned-minius", taskMinus);
     let taskPlus = getInnerTextByID("task-plus") + 1;
     setInnerTextByIDandValue("task-plus", taskPlus);
 
+    if (taskMinus === 0) {
+      alert("Congress !!!You Have compleated All The Task");
+    }
     let formattedTime = getCurrentTime();
 
     let add = document.getElementById("activity-history");
@@ -76,13 +85,16 @@ document
     this.disabled = true;
   });
 document.getElementById("Add-new-emoji").addEventListener("click", function () {
-  alert("OK!");
+  alert("Board Updatedd Successfully!!");
 
   let taskMinus = getInnerTextByID("task-assigned-minius") - 1;
   setInnerTextByIDandValue("task-assigned-minius", taskMinus);
   let taskPlus = getInnerTextByID("task-plus") + 1;
   setInnerTextByIDandValue("task-plus", taskPlus);
 
+  if (taskMinus === 0) {
+    alert("Congress !!!You Have compleated All The Task");
+  }
   let formattedTime = getCurrentTime();
 
   let add = document.getElementById("activity-history");
@@ -96,12 +108,16 @@ document.getElementById("Add-new-emoji").addEventListener("click", function () {
 document
   .getElementById("Integrate-OpenAI-API")
   .addEventListener("click", function () {
-    alert("OK!");
+    alert("Board Updatedd Successfully!!");
 
     let taskMinus = getInnerTextByID("task-assigned-minius") - 1;
     setInnerTextByIDandValue("task-assigned-minius", taskMinus);
     let taskPlus = getInnerTextByID("task-plus") + 1;
     setInnerTextByIDandValue("task-plus", taskPlus);
+
+    if (taskMinus === 0) {
+      alert("Congress !!!You Have compleated All The Task");
+    }
 
     let formattedTime = getCurrentTime();
 
@@ -122,12 +138,16 @@ document
 document
   .getElementById("Improve-Job-searching")
   .addEventListener("click", function () {
-    alert("OK!");
+    alert("Board Updatedd Successfully!!");
 
     let taskMinus = getInnerTextByID("task-assigned-minius") - 1;
     setInnerTextByIDandValue("task-assigned-minius", taskMinus);
     let taskPlus = getInnerTextByID("task-plus") + 1;
     setInnerTextByIDandValue("task-plus", taskPlus);
+
+    if (taskMinus === 0) {
+      alert("Congress !!!You Have compleated All The Task");
+    }
 
     let formattedTime = getCurrentTime();
 
