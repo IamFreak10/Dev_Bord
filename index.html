@@ -50,15 +50,17 @@
 
 <body class="poppins-light bg-[#F4F7FF] max-w-[100%] min-h-screen mx-auto">
 
-    <section class="max-w-[90%] mx-auto my-10 bg-base-100 flex gap-x-6">
+<section class="flex gap-x-6  max-w-[90%] mx-auto ">
+
+    <section class="max-w-[75%] my-10 bg-base-100 flex gap-x-6 rounded-lg">
         <!-- Left Large Part -->
-        <div class="w-[75%] p-5 ">
+        <div class=" p-5 ">
             <!-- Upper Part -->
-            <div class="flex justify-around   w-auto gap-5 mb-16 ">
+            <div class="flex flex-row justify-around   w-auto gap-5 mb-16 ">
                 <div class="flex items-center  bg-[#F4F7FF]  px-5 py-2 gap-8 rounded-lg">
                     <div class="bg-white p-5 rounded-full"> <img src="assets/checkbox.png" alt=""></div>
                     <div>
-                        <h4 class="text-xl">Task Assigned </h4>
+                        <h4 class="text-xl">Task Assigned</h4>
                         <h2 id="task-assigned-minius" class="font-bold text-3xl">06</h2>
                     </div>
                 </div>
@@ -73,9 +75,12 @@
 
                     </div>
                 </div>
+               
             </div>
+            
+            
             <!-- Card Container -->
-            <div class="grid grid-cols-3 gap-x-8 gap-y-10">
+            <div class="grid grid-cols-3 gap-x-8 gap-y-10 ">
                 <div class=" bg-[#F4F7FF] rounded-xl p-3  ">
                     <div class="mb-5">
                         <button class="bg-white px-4 py-1 rounded-xl mb-3 ">ShopEase</button>
@@ -106,7 +111,7 @@
                             <h2 class="font-bold">21 March 2025</h2>
 
                         </div>
-                        <button id="add-dark-mode" class="btn text-white  bg-blue-500 rounded-md">Completed</button>
+                        <button id="add-dark-mode" class="btn text-white  bg-blue-500 rounded-md mt-6">Completed</button>
                     </div>
                 </div>
                 <div class=" bg-[#F4F7FF] rounded-xl p-3 ">
@@ -186,25 +191,28 @@
         <!-- Activity Part -->
 
 
-        <div class="w-[23%]">
-            <div class="flex flex-col items-center  p-5 ">
-                <div class="flex items-center mb-5">
-                    <img src="assets/activity.png" alt="">
-                    <h2 class="text-xl font-semibold">Activity Log</h2>
-                </div>
-                <div> <button id="Clear-history" class="btn text-white  bg-blue-500 rounded-md">Clear History</button>
-                </div>
 
+
+    </section>
+    <div class="w-[23%] bg-white my-10 rounded-lg">
+        <div class="flex flex-col items-center  p-5 ">
+            <div class="flex items-center mb-5">
+                <img src="assets/activity.png" alt="">
+                <h2 class="text-xl font-semibold">Activity Log</h2>
             </div>
-            <hr>
-            <div id="activity-history" class="flex flex-col items-center  p-5 ">
-
-
+            <div> <button id="Clear-history" class="btn text-white  bg-blue-500 rounded-md">Clear History</button>
             </div>
 
         </div>
+        <hr>
+        <div id="activity-history" class="flex flex-col items-center  p-5 ">
 
-    </section>
+
+        </div>
+
+    </div>
+
+</section>
 </body>
 <script src="./functions/function.js"></script>
 <script src="./interactive/theme.js"></script>
